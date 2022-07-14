@@ -17,24 +17,25 @@ Take a standard HTML web page and embed a Webex SDK 'Space Widget' to easily ena
 
 ### Installation
 To embed a Space Widget into a web page, we first need to have a web page! A basic HTML/CSS project for the fictitious 'OneBank' company can be downloaded from GitHub, or cloned via Git:
+ 
+#### Obtain your Webex Personal Access Token 
+
+[Webex Access Token!](https://developer.webex.com/docs/getting-started)
+> Important: Copy Personal Access Token for later use
+ 
+![CleanShot-Google Chrome202207-14 at 11 17 36](https://user-images.githubusercontent.com/9085386/179029658-ecdb4a93-b1a1-47c9-8d87-4a0af12e15db.png)
 
 #### Clone repo 
 ```
 git clone https://github.com/CiscoDevNet/devnet-express-cloud-collab-code-samples.git
-cd /devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet
+cd /devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank
 ```
-#### Obtain Webex access token and create a bot
-
-[Webex Access Token!](https://developer.webex.com/docs/getting-started)
-[Webex Bot Here!](https://developer.webex.com/docs/bots)
-> Note: The widgets require that you define your Webex integration application with the `spark:all` permission scope
-> Important: Copy bot email and API token for later use
 
 #### Configure
 
-1. Navigate to `/devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank`
-2. Open `webex-teams.html`
-  -- make the needed modifications to this file. Save and test it out
+1. In the `/devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank` folder
+2. Open `webex-teams.html` in an editor
+  -- add your Webex personal access token and an email address to a webex user that is not yourself. Save the file
 3. Load up the main web application file onebank.html into your editor
   - Find Line 69, which defines the blue button on the page labeled 'Ask Sandy':
  `<input type='submit' value='Ask Sandy' name='submit' class='submit' onclick='' />`
