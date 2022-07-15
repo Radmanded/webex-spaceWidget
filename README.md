@@ -36,12 +36,12 @@ cd /devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-m
 1. In the `/devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank` folder
 2. Open `webex-teams.html` in an editor
   -- add your Webex personal access token and an email address to a webex user that is not yourself. Save the file
-3. Load up the main web application file onebank.html into your editor
+3. Make changes to onebank.html in your editor
   - Find Line 69, which defines the blue button on the page labeled 'Ask Sandy':
  `<input type='submit' value='Ask Sandy' name='submit' class='submit' onclick='' />`
 > Note: the `oneclick` handler is empty
 4. Place `window.open("webex-teams.html","","height=500,width=450")` inside the `onclick=''`
-> Example:  
+> Example of Line 69 after change:  
 ```
 <input type='submit' value='Ask Sandy' name='submit' class='submit' onclick='window.open("webex-teams.html","","height=500,width=450")' />
 
