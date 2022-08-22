@@ -20,8 +20,11 @@ To embed a Space Widget into a web page, we first need to have a web page! A bas
  
 ## Obtain your Webex Personal Access Token 
 
-[Webex Access Token!](https://developer.webex.com/docs/getting-started)
-> Important: Copy Personal Access Token for later use
+[Click here for your Webex Access Token!](https://developer.webex.com/docs/getting-started)
+
+or https://developer.webex.com/docs/getting-started 
+ > Important: Copy Personal Access Token for later use
+<br/>
  
 ![CleanShot-Google Chrome202207-14 at 11 17 36](https://user-images.githubusercontent.com/9085386/179029658-ecdb4a93-b1a1-47c9-8d87-4a0af12e15db.png)
 
@@ -30,8 +33,8 @@ To embed a Space Widget into a web page, we first need to have a web page! A bas
 
 1. Clone the repository with git 
 ```
-git clone https://github.com/CiscoDevNet/devnet-express-cloud-collab-code-samples.git
-cd /devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank
+git clone https://github.com/Radmanded/webex-spaceWidget.git
+cd /webex-spaceWidget/onebank
 ```
 
 2. In the `/devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank` folder
@@ -39,15 +42,16 @@ cd /devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-m
 <br/>
 
 3. Open `webex-teams.html` in an editor
-  -- add your Webex personal access token and an 
-  -- add an email address to a webex user that is not yourself
+  -- add your Webex personal access token 
+  -- add an email address to your test webex account (The second webex account I mentioned at the beginning)
   -- Save the file
 
 <br/>
 
-4. Next make changes to onebank.html in your editor
-  - Find Line 69, which defines the blue button on the page labeled 'Ask Sandy':
- `<input type='submit' value='Ask Sandy' name='submit' class='submit' onclick='' />`
+4. Open `onebank.html` in your editor
+  - Find Line 69
+ 
+ `<input type='submit' value='Ask Sandy' name='submit' class='submit' oneclick='' />`
 
 <br/>
 
@@ -55,7 +59,7 @@ cd /devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-m
 
 <br/>
 
-5. Place `window.open("webex-teams.html","","height=500,width=450")` inside the `onclick=''`
+5. Copy and paste `window.open("webex-teams.html","","height=500,width=450")` inside the `onclick=''` inside the `oneclick=''` handler
 
 <br/>
 
