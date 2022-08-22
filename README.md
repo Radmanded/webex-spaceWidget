@@ -28,24 +28,24 @@ To embed a Space Widget into a web page, we first need to have a web page! A bas
 
 ## Configure
 
-### Clone repo 
+1. Clone the repository with git 
 ```
 git clone https://github.com/CiscoDevNet/devnet-express-cloud-collab-code-samples.git
 cd /devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank
 ```
 
-1. In the `/devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank` folder
+2. In the `/devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-meet/onebank` folder
 
 <br/>
 
-2. Open `webex-teams.html` in an editor
+3. Open `webex-teams.html` in an editor
   -- add your Webex personal access token and an 
   -- add an email address to a webex user that is not yourself
   -- Save the file
 
 <br/>
 
-3. Next make changes to onebank.html in your editor
+4. Next make changes to onebank.html in your editor
   - Find Line 69, which defines the blue button on the page labeled 'Ask Sandy':
  `<input type='submit' value='Ask Sandy' name='submit' class='submit' onclick='' />`
 
@@ -55,7 +55,7 @@ cd /devnet-express-cloud-collab-code-samples/itp/collab-spark-video-sdk-widget-m
 
 <br/>
 
-4. Place `window.open("webex-teams.html","","height=500,width=450")` inside the `onclick=''`
+5. Place `window.open("webex-teams.html","","height=500,width=450")` inside the `onclick=''`
 
 <br/>
 
